@@ -20,7 +20,7 @@ spec:
         app: pushwf
     spec:     
       containers:                    
-        - image: keelhq/push-workflow-example:latest
+        - image: prajyotparab1904/push-workflow-example:latest
           imagePullPolicy: Always # this is required to force pull image     
           name: pushwf
           ports:
