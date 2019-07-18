@@ -6,6 +6,7 @@ metadata:
     name: "pushwf"
     # force policy will ensure that deployment is updated
     # even when tag is unchanged (latest remains)
+  annotations:
     keel.sh/policy: force
     keel.sh/trigger: poll     # enable active repository checking (webhooks and GCR would still work)
     keel.sh/pollSchedule: "@every 5m"
