@@ -1,0 +1,15 @@
+language: go
+
+os:
+  - linux-ppc64le
+
+go:
+  - 1.12.x
+
+sudo: required
+
+services:
+  - docker
+
+script:
+  - ci-check-ppc64le.sh
